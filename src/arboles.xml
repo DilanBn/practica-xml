@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<!DOCTYPE Arboles [
+        <!ELEMENT Arboles (TipoArbol)*>
+        <!ELEMENT TipoArbol (nombre_comun, vegetacion, altura, forma, color_primavera, color_otoño, resistencia_heladas)*>
+        <!ELEMENT nombre_comun (#PCDATA)>
+        <!ELEMENT vegetacion (#PCDATA)>
+        <!ELEMENT altura (#PCDATA)>
+        <!ELEMENT forma (#PCDATA)>
+        <!ELEMENT color_primavera (#PCDATA)>
+        <!ELEMENT color_otoño (#PCDATA)>
+        <!ELEMENT resistencia_heladas (#PCDATA)>
+        ]>
+<Arboles>
+    <TipoArbol>
+        <nombre_comun>Arce de Montpellier, Arce menor</nombre_comun>
+        <vegetacion>Caducifolio</vegetacion>
+        <altura>De 6 a 10 metro</altura>
+        <forma>Copa esférica. Tronco principal recto con bifurcaciones. Ramaje colgante</forma>
+        <color_primavera>Haz verde brillante, envés verde blanquecino</color_primavera>
+        <color_otoño></color_otoño>
+        <resistencia_heladas>Heladas fuertes (hasta -15ºC)</resistencia_heladas>
+    </TipoArbol>
+    <TipoArbol>
+        <nombre_comun>Olivo</nombre_comun>
+        <vegetacion>Perenne</vegetacion>
+        <altura>De 8 a 15 metros</altura>
+        <forma>Copa irregular. Tronco principal irregular con bifurcaciones.</forma>
+        <color_primavera></color_primavera>
+        <color_otoño></color_otoño>
+        <resistencia_heladas></resistencia_heladas>
+    </TipoArbol>
+    <TipoArbol>
+        <nombre_comun></nombre_comun>
+        <vegetacion></vegetacion>
+        <altura></altura>
+        <forma></forma>
+        <color_primavera>Haz verde oscuro, envés verde plateado</color_primavera>
+        <color_otoño></color_otoño>
+        <resistencia_heladas>Heladas medias (hasta -10ºC)</resistencia_heladas>
+    </TipoArbol>
+    <TipoArbol>
+        <nombre_comun>Platano</nombre_comun>
+        <vegetacion>Caducifolio</vegetacion>
+        <altura>De 20 a 25 metros</altura>
+        <forma>Copa ovoidal. Tronco principal recto. Ramaje expandido</forma>
+        <color_primavera>Haz verde medio, enves verde claro</color_primavera>
+        <color_otoño></color_otoño>
+        <resistencia_heladas>Heladas fuertes (hasta -20ºC)</resistencia_heladas>
+    </TipoArbol>
+    <TipoArbol>
+        <nombre_comun>Encina</nombre_comun>
+        <vegetacion>Perenne</vegetacion>
+        <altura>En torno a 25 metros</altura>
+        <forma>Copa esférica o elíptica irregular. Tronco principal recto. Ramaje tortuoso</forma>
+        <color_primavera>Plateado en hojas jóvenes. En hojas antiguas, haz verde oscuro, envés plateado </color_primavera>
+        <color_otoño></color_otoño>
+        <resistencia_heladas>Heladas fuertes (hasta -15ºC)</resistencia_heladas>
+    </TipoArbol>
+</Arboles>

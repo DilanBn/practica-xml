@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE Invoice [
+        <!ELEMENT Invoice (Business_Contact, Logo, Information, Description_services, Customer_message, Payment)*>
+        <!ELEMENT Business_Contact (Business_name, Street_Address, City_State_ZipCode, Phone_Number, Email, Website)*>
+        <!ELEMENT Business_name (#PCDATA)>
+        <!ELEMENT Street_Address (#PCDATA)>
+        <!ELEMENT City_State_ZipCode (#PCDATA)>
+        <!ELEMENT Phone_Number (#PCDATA)>
+        <!ELEMENT Email (#PCDATA)>
+        <!ELEMENT Website (#PCDATA)>
+        <!ELEMENT Logo (#PCDATA)>
+        <!ELEMENT Information (Bill_to, Ship_to, Invoice_details)*>
+        <!ELEMENT Bill_to (Client_name, Street_Address, City_State_ZipCode)*>
+        <!ELEMENT Client_name (#PCDATA)>
+        <!ELEMENT Ship_to (Client_name, Street_Address, City_State_ZipCode)*>
+        <!ELEMENT Invoice_details (InvoiceNumber, InvoiceDate, Terms_Payment)*>
+        <!ELEMENT InvoiceNumber (#PCDATA)>
+        <!ELEMENT InvoiceDate (#PCDATA)>
+        <!ELEMENT Terms_Payment (#PCDATA)>
+        <!ELEMENT Description_services (Product_Service, Description, Qty_hrs, Rate, Amount)*>
+        <!ELEMENT Product_Service (#PCDATA)>
+        <!ELEMENT Description (#PCDATA)>
+        <!ELEMENT Qty_hrs (#PCDATA)>
+        <!ELEMENT Rate (#PCDATA)>
+        <!ELEMENT Amount (#PCDATA)>
+        <!ELEMENT Customer_message (#PCDATA)>
+        <!ELEMENT Payment (Subtotal, Sales_tax, Shipping, Total)*>
+        <!ELEMENT Subtotal (#PCDATA)>
+        <!ELEMENT Sales_tax (#PCDATA)>
+        <!ELEMENT Shipping (#PCDATA)>
+        <!ELEMENT Total (#PCDATA)>
+        ]>
+
+<Invoice>
+    <Business_Contact>
+        <Business_name></Business_name>
+        <Street_Address></Street_Address>
+        <City_State_ZipCode></City_State_ZipCode>
+        <Phone_Number></Phone_Number>
+        <Email></Email>
+        <Website></Website>
+    </Business_Contact>
+    <Logo></Logo>
+    <Information>
+        <Bill_to>
+            <Client_name></Client_name>
+            <Street_Address></Street_Address>
+            <City_State_ZipCode></City_State_ZipCode>
+        </Bill_to>
+        <Ship_to>
+            <Client_name></Client_name>
+            <Street_Address></Street_Address>
+            <City_State_ZipCode></City_State_ZipCode>
+        </Ship_to>
+        <Invoice_details>
+        <InvoiceNumber></InvoiceNumber>
+        <InvoiceDate></InvoiceDate>
+        <Terms_Payment></Terms_Payment>
+        </Invoice_details>
+    </Information>
+    <Description_services>
+        <Product_Service></Product_Service>
+        <Description></Description>
+        <Qty_hrs></Qty_hrs>
+        <Rate></Rate>
+        <Amount></Amount>
+    </Description_services>
+    <Customer_message>Hello! Thank you for your purchase. Please return this invoice whit payment. Thanks!</Customer_message>
+    <Payment>
+        <Subtotal></Subtotal>
+        <Sales_tax></Sales_tax>
+        <Shipping></Shipping>
+        <Total></Total>
+    </Payment>
+</Invoice>
